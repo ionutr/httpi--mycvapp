@@ -1,0 +1,3 @@
+httpi_mycv_admin_homepage:
+    pattern:  /hello/{name}
+    defaults: { _controller: HttpiMycvAdminBundle:Default:index }

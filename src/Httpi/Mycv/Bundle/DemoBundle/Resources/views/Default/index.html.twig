@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Ionut Rus CV - v0.1.0 [DEV]</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Language" content="en" />
+    <meta name="Publisher" content="httpi" />
+    <meta name="Copyright" content="&copy; Ionut Rus" />
+
+    <link rel="stylesheet" type="text/css" href="css/reset.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/fonts.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" media="all" />
+    {% block css %}
+        {% stylesheets
+        '@HttpiCoreBundle/Resources/public/css/reset.css'
+        %}
+        <link rel="stylesheet" href="{{ asset_url }}" />
+        {% endstylesheets %}
+    {% endblock %}
+
+</head>
+
+<body>
+
+<!-- #wrapper -->
+<div id="wrapper">
+
+    <!-- #header -->
+    <header id="header">
+
+        <p class="updated">last updated on 04 July 2013</p>
+
+        <!-- #presentation -->
+        <div id="presentation">
+
+            <h1>IONUT RUS</h1>
+            <h2 class="type">Freelancer</h2>
+            <h2 class="position">Web Architect</h2>
+
+        </div>
+        <!-- //#presentation -->
+
+        <!-- #vcard -->
+        <div id="vcard">
+
+            <p class="email"><a href="#">E-mail me!</a></p>
+            <p class="phone">(+49) 01523 7832 615</p>
+            <address>Burgunderstr 5, 70435, Stuttgart, DE</address>
+
+        </div>
+        <!-- //#vcard -->
+
+    </header>
+    <!-- //#header -->
+
+    <!-- #main -->
+    <div id="main">
+
+        <blockquote class="cite">
+            <p class="content">„Any sufficiently advanced technology is indistinguishable from magic”</p>
+            <p class="author">(Arthur C. Clarke)</p>
+        </blockquote>
+
+        <h2 class="section">Technical Skills</h2>
+
+    </div>
+    <!-- //#main -->
+
+</div>
+<!-- //#wrapper -->
+
+</body>
+
+</html>

@@ -1,0 +1,7 @@
+parameters:
+#    httpi_mycv_admin.example.class: Httpi\Mycv\Bundle\AdminBundle\Example
+
+services:
+#    httpi_mycv_admin.example:
+#        class: %httpi_mycv_admin.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

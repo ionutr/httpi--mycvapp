@@ -1,0 +1,12 @@
+httpi_mycv_demo:
+    resource: "@HttpiMycvDemoBundle/Resources/config/routing.yml"
+    prefix:   /
+
+httpi_mycv_admin:
+    resource: "@HttpiMycvAdminBundle/Resources/config/routing.yml"
+    prefix:   /
+
+httpi_mycv_core:
+    resource: "@HttpiMycvCoreBundle/Resources/config/routing.yml"
+    prefix:   /
+
