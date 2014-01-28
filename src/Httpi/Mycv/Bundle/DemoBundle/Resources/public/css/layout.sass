@@ -1,0 +1,175 @@
+@import "colors"
+@import "mixins"
+@import "variables"
+@import "typography"
+@import "tables"
+
+html
+  background-image: url(/bundles/httpimycvdemo/img/bg/bg--html.png)
+  background-repeat: repeat
+
+  body
+    *
+      background-repeat: no-repeat
+
+    #wrapper
+      margin: 20px auto 0 auto
+      width: 958px
+      margin-bottom: 30px
+      font-size: $default-text-size
+      border: 1px solid $black
+      background-color: $white
+
+      #header
+        height: 290px
+        background-image: url(/bundles/httpimycvdemo/img/bg/bg--presentation.jpg)
+        background-position: 0 bottom
+
+        p.updated
+          text-align: right
+          padding-right: 10px
+          color: $mediumgray
+
+        #presentation
+          position: relative
+          height: 275px
+          border-bottom: 1px solid $black
+
+          h1
+            width: 200px
+            position: absolute
+            right: 20px
+            top: 30px
+            @include extrabig-headline
+            text-align: right
+            color: $anthracit
+
+          h2
+            position: absolute
+            right: 20px
+            top: 150px
+            @include prettybig-headline
+            text-align: right
+
+            &.type
+              color: $white
+
+            &.position
+              top: 190px
+              @include big-headline
+
+
+        #vcard
+          width: 100%
+          padding-top: 2px
+          height: 23px
+          overflow: hidden
+          position: relative
+
+          .icon--container
+            margin-right: 3px
+          a
+            &:hover
+              color: $golden !important
+          *
+            color: $black !important
+            font-size: $normal-text-size !important
+
+          .contact--email
+            @include quote-text
+            position: absolute
+            left: 30px
+
+          .contact--phone
+            @include quote-text
+            position: absolute
+            left: 210px
+
+          .contact--www
+            @include quote-text
+            position: absolute
+            left: 390px
+
+          .contact--xing
+            @include quote-text
+            position: absolute
+            left: 562px
+
+          address
+            @include quote-text
+            position: absolute
+            right: 20px
+
+      #main
+        margin-top: 50px
+
+        section
+          margin-bottom: $section-margin
+          padding-bottom: $section-margin
+          border-bottom: 2px solid $anthracit
+          &.is--last
+            padding-bottom: 40px
+            border-bottom-style: none
+
+          .grid--container
+            width: 920px
+            @include autocentered
+            margin-top: 20px
+            overflow: hidden
+
+            .article
+              width: 47%
+              height: 360px
+              margin-bottom: 30px
+              padding: 10px
+              background-color: $anthracit
+              opacity: 1
+              position: relative
+
+              .icon--container
+                position: absolute
+                right: 10px
+                top: 20px
+
+              &.grid--position-left
+                float: left
+              &.grid--position-right
+                float: right
+                background-color: $golden
+                .subsection
+                  color: $anthracit
+
+              &.is--reversed-left
+                background-color: $golden
+                .subsection
+                  color: $anthracit
+              &.is--reversed-right
+                background-color: $anthracit
+                .subsection
+                  color: $golden
+
+              .subsection
+                margin-top: 20px
+                @include section-title
+                color: $golden
+                font-size: $title-text-size
+                font-weight: bold
+
+          blockquote.cite
+            padding-left: 10px
+            @include quote-text
+            color: $lightgrey
+            width: 100%
+            overflow: hidden
+
+            p
+              float: left
+              &.author
+                margin-left: 10px
+
+          .section
+            padding: 10px 0 0 15px
+            @include section-title
+
+.is--hidden
+  display: none

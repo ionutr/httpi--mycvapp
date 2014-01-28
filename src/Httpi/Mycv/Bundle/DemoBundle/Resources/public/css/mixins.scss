@@ -1,0 +1,45 @@
+@mixin extrabig-headline {
+  font: {
+    family: $fontfamily-fascinateregular;
+    size: $extrabig-text-size;
+  }
+  line-height: $extrabig-text-size;
+}
+
+@mixin big-headline {
+  font: {
+    family: $fontfamily-fascinateregular;
+    size: $big-text-size;
+  }
+  color: $golden
+}
+
+@mixin prettybig-headline {
+  font: {
+    family: $fontfamily-fascinateregular;
+    size: $prettybig-text-size;
+  }
+}
+
+@mixin quote-text {
+  font: {
+    family: $fontfamily-cooper-blackregular;
+    size: $normal-text-size;
+  }
+  color: dodgerblue;
+}
+
+@mixin section-title {
+  font: {
+    family: $fontfamily-cooper-blackregular;
+    size: $medium-text-size;
+  }
+  color: $orange;
+}
+
+@mixin autocentered {
+  margin: {
+    left: auto;
+    right: auto;
+  }
+}

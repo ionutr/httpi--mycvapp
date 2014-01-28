@@ -1,77 +1,458 @@
 <!DOCTYPE html>
-<html>
+    <html>
 
-<head>
+        <head>
 
-    <title>Ionut Rus CV - v0.1.0 [DEV]</title>
+            <title>{% block title %}Ionut Rus CV - v0.1.0 [DEV]{% endblock %}</title>
 
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta http-equiv="Content-Language" content="en" />
-    <meta name="Publisher" content="httpi" />
-    <meta name="Copyright" content="&copy; Ionut Rus" />
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+            <meta http-equiv="Content-Language" content="en" />
+            <meta name="Publisher" content="httpi" />
+            <meta name="Copyright" content="&copy; Ionut Rus" />
+            {% block css %}
+                {% stylesheets
+                '@HttpiCoreBundle/Resources/public/css/reset.css'
+                '@HttpiMycvDemoBundle/Resources/public/css/fonts.css'
+                '@HttpiMycvDemoBundle/Resources/public/css/icon-font.css'
+                '@HttpiMycvDemoBundle/Resources/public/css/layout.css'
+                %}
+                <link rel="stylesheet" href="{{ asset_url }}" />
+                {% endstylesheets %}
+            {% endblock %}
 
-    <link rel="stylesheet" type="text/css" href="css/reset.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/fonts.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/main.css" media="all" />
-    {% block css %}
-        {% stylesheets
-            '@HttpiCoreBundle/Resources/public/css/reset.css'
-        %}
-        <link rel="stylesheet" href="{{ asset_url }}" />
-        {% endstylesheets %}
-    {% endblock %}
+        </head>
 
-</head>
+        <body>
 
-<body>
+            <!-- #wrapper -->
+            <div id="wrapper">
 
-<!-- #wrapper -->
-<div id="wrapper">
+                <!-- #header -->
+                <header id="header">
 
-    <!-- #header -->
-    <header id="header">
+                    <section data-datasection="contact" data-position="1">
 
-        <p class="updated">last updated on 04 July 2013</p>
+                        <p class="updated">last updated on <span data-datarole="general--last-updated">24 November
+                                2013</span></p>
 
-        <!-- #presentation -->
-        <div id="presentation">
+                        <!-- #presentation -->
+                        <div id="presentation">
 
-            <h1>IONUT RUS</h1>
-            <h2 class="type">Freelancer</h2>
-            <h2 class="position">Web Architect</h2>
+                            <h1 data-datarole="fullname">IONUT RUS</h1>
+                            <h2 class="type">Freelancer</h2>
+                            <h2 class="position">Web Architect</h2>
 
-        </div>
-        <!-- //#presentation -->
+                        </div>
+                        <!-- //#presentation -->
 
-        <!-- #vcard -->
-        <div id="vcard">
+                        <!-- #vcard -->
+                        <div id="vcard">
 
-            <p class="email"><a href="#">E-mail me!</a></p>
-            <p class="phone">(+49) 01523 7832 615</p>
-            <address>Burgunderstr 5, 70435, Stuttgart, DE</address>
+                            <p class="contact--email" data-datarole="contact--email">
+                                <span class="icon--container icon-size-normal icon-mail5 is--lightblue"></span>
+                                <a href="mailto:work@ionutrus.com" title="work@ionutrus.com">work@ionutrus.com</a>
+                            </p>
+                            <p class="contact--phone" data-datarole="contact--phone"><span class="icon--container icon-size-normal icon-mobile2
+                            is--lightblue"></span>(+49) 01523 7832 615</p>
+                            <p class="contact--www" data-datarole="contact--www"><span class="icon--container icon-size-normal icon-xing
+                            is--lightblue"></span><a href="https://www.ionutrus.com" title="Personal Website">www.ionutrus.com</a></p>
+                            <p class="contact--xing" data-datarole="contact--xing"><span class="icon--container icon-size-normal icon-xing
+                            is--lightblue"></span><a href="https://www.xing.com/profiles/Ionut_Rus" title="XING Profile">Ionut_Rus</a></p>
+                            <address data-datarole="contact--address-text"><span class="icon--container icon-size-normal icon-home3
+                            is--lightblue"></span>Burgunderstr 5, 70435, Stuttgart,
+                                DE</address>
 
-        </div>
-        <!-- //#vcard -->
+                        </div>
+                        <!-- //#vcard -->
 
-    </header>
-    <!-- //#header -->
+                    </section>
 
-    <!-- #main -->
-    <div id="main">
+                </header>
+                <!-- //#header -->
 
-        <blockquote class="cite">
-            <p class="content">„Any sufficiently advanced technology is indistinguishable from magic”</p>
-            <p class="author">(Arthur C. Clarke)</p>
-        </blockquote>
+                <!-- #main -->
+                <div id="main">
 
-        <h2 class="section">Technical Skills</h2>
+                    <section data-datasection="technical-skills" data-position="2">
 
-    </div>
-    <!-- //#main -->
+                        <blockquote class="cite">
+                            <p class="content">„Any sufficiently advanced technology is
+                                indistinguishable from
+                                magic”</p>
+                            <p class="author">(Arthur C. Clarke)</p>
+                        </blockquote>
 
-</div>
-<!-- //#wrapper -->
+                        <h2 class="section" data-datarole="skills-technical-title"><span class="icon--container
+                                icon-size-big icon-light-bulb"></span>Technical Skills</h2>
 
-</body>
+                        <div class="grid--container">
 
-</html>
+                            <div class="article grid--position-left" data-datarole="technical-skills-programming">
+                                <h3 class="subsection">Programming languages</h3>
+                                <span class="icon--container icon-size-medium icon-power-cord is--lightblue"></span>
+                                <table class="data-table has--zebra-stripes">
+                                    <thead>
+                                        <tr>
+                                            <th class="col--value">
+                                                <h4>Language</h4>
+                                            </th>
+                                            <th class="col--duration">Years</th>
+                                            <th class="col--used">Projects</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="mod--2-0">
+                                            <td class="col--value">PHP 5<span class="icon--container
+                                icon-size-small icon-star4" title="Top Skill"></span></td>
+                                            <td class="col--duration">9+</td>
+                                            <td class="col--used">100+</td>
+                                        </tr>
+                                        <tr class="mod--2-1">
+                                            <td class="col--value">MySQL 5</td>
+                                            <td class="col--duration">9+</td>
+                                            <td class="col--used">100+</td>
+                                        </tr>
+                                        <tr class="mod--2-0">
+                                            <td class="col--value">(x)HTML<span class="icon--container
+                                icon-size-small icon-star4" title="Top Skill"></span></td>
+                                            <td class="col--duration">11+</td>
+                                            <td class="col--used">150+</td>
+                                        </tr>
+                                        <tr class="mod--2-1">
+                                            <td class="col--value">PostgreSQL</td>
+                                            <td class="col--duration">3+</td>
+                                            <td class="col--used">30+</td>
+                                        </tr>
+                                        <tr class="mod--2-0">
+                                            <td class="col--value">HTML 5</td>
+                                            <td class="col--duration">3+</td>
+                                            <td class="col--used">10+</td>
+                                        </tr>
+                                        <tr class="mod--2-1">
+                                            <td class="col--value">CSS(1/2/3)<span class="icon--container
+                                icon-size-small icon-star4" title="Top Skill"></span></td>
+                                            <td class="col--duration">11+</td>
+                                            <td class="col--used">150+</td>
+                                        </tr>
+                                        <tr class="mod--2-0">
+                                            <td class="col--value">Javascript<span class="icon--container
+                                icon-size-small icon-star4" title="Top Skill"></span></td>
+                                            <td class="col--duration">10+</td>
+                                            <td class="col--used">150+</td>
+                                        </tr>
+                                        <tr class="mod--2-1">
+                                            <td class="col--value">TWIG</td>
+                                            <td class="col--duration">3+</td>
+                                            <td class="col--used">20+</td>
+                                        </tr>
+                                        <tr class="mod--2-0">
+                                            <td class="col--value">AS3(ActionScript)</td>
+                                            <td class="col--duration">1+</td>
+                                            <td class="col--used">3</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="article grid--position-right" data-datarole="technical-skills-frameworks">
+                                <h3 class="subsection">Frameworks</h3>
+                                <span class="icon--container icon-size-medium icon-cogs is--lightblue"></span>
+                                <table class="data-table has--zebra-stripes">
+                                    <thead>
+                                    <tr>
+                                        <th class="col--value">
+                                            <h4>Framework</h4>
+                                        </th>
+                                        <th class="col--duration">Years</th>
+                                        <th class="col--used">Projects</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr class="mod--2-0">
+                                        <td class="col--value">Symfony<span class="icon--container
+                                icon-size-small icon-star4" title="Top Skill"></span></td>
+                                        <td class="col--duration">4+</td>
+                                        <td class="col--used">20+</td>
+                                    </tr>
+                                    <tr class="mod--2-1">
+                                        <td class="col--value">Zend Frameowrk</td>
+                                        <td class="col--duration">1+</td>
+                                        <td class="col--used">3</td>
+                                    </tr>
+                                    <tr class="mod--2-0">
+                                        <td class="col--value">yii</td>
+                                        <td class="col--duration">1</td>
+                                        <td class="col--used">2</td>
+                                    </tr>
+                                    <tr class="mod--2-1">
+                                        <td class="col--value">LESS</td>
+                                        <td class="col--duration">1</td>
+                                        <td class="col--used">5</td>
+                                    </tr>
+                                    <tr class="mod--2-0">
+                                        <td class="col--value">Compass</td>
+                                        <td class="col--duration">1</td>
+                                        <td class="col--used">3</td>
+                                    </tr>
+                                    <tr class="mod--2-1">
+                                        <td class="col--value">jQuery<span class="icon--container
+                                icon-size-small icon-star4" title="Top Skill"></span></td>
+                                        <td class="col--duration">8+</td>
+                                        <td class="col--used">50+</td>
+                                    </tr>
+                                    <tr class="mod--2-0">
+                                        <td class="col--value">ExtJS<span class="icon--container
+                                            icon-size-small icon-star4" title="Top Skill"></span></td>
+                                        <td class="col--duration">2+</td>
+                                        <td class="col--used">5</td>
+                                    </tr>
+                                    <tr class="mod--2-1">
+                                        <td class="col--value">Adobe FLEX/AIR</td>
+                                        <td class="col--duration">3+</td>
+                                        <td class="col--used">5</td>
+                                    </tr>
+                                    <tr class="mod--2-0">
+                                        <td class="col--value">Javascript MVC</td>
+                                        <td class="col--duration">0.5</td>
+                                        <td class="col--used">1</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="article grid--position-left is--reversed-left"
+                                 data-datarole="technical-skills-methodology">
+                                <h3 class="subsection">Methodologies</h3>
+                                <span class="icon--container icon-size-medium icon-clipboard is--lightblue"></span>
+                                <table class="data-table has--zebra-stripes">
+                                    <thead>
+                                    <tr>
+                                        <th class="col--value">
+                                            <h4>Methodology</h4>
+                                        </th>
+                                        <th class="col--duration">Years</th>
+                                        <th class="col--used">Projects</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr class="mod--2-0">
+                                        <td class="col--value">OOP(Object Oriented Programming)<span class="icon--container
+                                            icon-size-small icon-star4" title="Top Skill"></span></td>
+                                        <td class="col--duration">8+</td>
+                                        <td class="col--used">100+</td>
+                                    </tr>
+                                    <tr class="mod--2-1">
+                                        <td class="col--value">MVC(Model View Controller)<span class="icon--container
+                                            icon-size-small icon-star4" title="Top Skill"></span></td>
+                                        <td class="col--duration">8+</td>
+                                        <td class="col--used">100+</td>
+                                    </tr>
+                                    <tr class="mod--2-0">
+                                        <td class="col--value">PDO/ORM</td>
+                                        <td class="col--duration">7+</td>
+                                        <td class="col--used">50+</td>
+                                    </tr>
+                                    <tr class="mod--2-1">
+                                        <td class="col--value">DBAL(Database Abstraction Layer)</td>
+                                        <td class="col--duration">5+</td>
+                                        <td class="col--used">10+</td>
+                                    </tr>
+                                    <tr class="mod--2-0">
+                                        <td class="col--value">Crossbrowser Development<span class="icon--container
+                                            icon-size-small icon-star4" title="Top Skill"></span></td>
+                                        <td class="col--duration">10+</td>
+                                        <td class="col--used">150+</td>
+                                    </tr>
+                                    <tr class="mod--2-1">
+                                        <td class="col--value">REST/API</td>
+                                        <td class="col--duration">6+</td>
+                                        <td class="col--used">30+</td>
+                                    </tr>
+                                    <tr class="mod--2-0">
+                                        <td class="col--value">Agile/Scrum</td>
+                                        <td class="col--duration">4+</td>
+                                        <td class="col--used">10+</td>
+                                    </tr>
+                                    <tr class="mod--2-1">
+                                        <td class="col--value">Pair Programming</td>
+                                        <td class="col--duration">3+</td>
+                                        <td class="col--used">10+</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="article grid--position-right is--reversed-right"
+                                 data-datarole="technical-skills-various">
+                                <h3 class="subsection">Various</h3>
+                                <span class="icon--container icon-size-medium icon-list is--lightblue"></span>
+                                <table class="data-table has--zebra-stripes">
+                                    <thead>
+                                        <tr>
+                                            <th class="col--value">
+                                                <h4>Other</h4>
+                                            </th>
+                                            <th class="col--duration">Years</th>
+                                            <th class="col--used">Projects</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="mod--2-0">
+                                            <td class="col--value">SEO</td>
+                                            <td class="col--duration">5+</td>
+                                            <td class="col--used">50+</td>
+                                        </tr>
+                                        <tr class="mod--2-1">
+                                            <td class="col--value">JSON</td>
+                                            <td class="col--duration">6+</td>
+                                            <td class="col--used">50+</td>
+                                        </tr>
+                                        <tr class="mod--2-0">
+                                            <td class="col--value">UNIX</td>
+                                            <td class="col--duration">8</td>
+                                            <td class="col--used">150+</td>
+                                        </tr>
+                                        <tr class="mod--2-1">
+                                            <td class="col--value">CMS(Content Management Systems)<span class="icon--container
+                                            icon-size-small icon-star4" title="Top Skill"></span></td>
+                                            <td class="col--duration">6</td>
+                                            <td class="col--used">40+</td>
+                                        </tr>
+                                        <tr class="mod--2-0">
+                                            <td class="col--value">DMS(Document Management Systems)<span class="icon--container
+                                            icon-size-small icon-star4" title="Top Skill"></span></td>
+                                            <td class="col--duration">2</td>
+                                            <td class="col--used">2</td>
+                                        </tr>
+                                        <tr class="mod--2-1">
+                                            <td class="col--value">ERP<span class="icon--container
+                                            icon-size-small icon-star4" title="Top Skill"></span></td>
+                                            <td class="col--duration">5+</td>
+                                            <td class="col--used">10+</td>
+                                        </tr>
+                                        <tr class="mod--2-0">
+                                            <td class="col--value">B2B</td>
+                                            <td class="col--duration">5+</td>
+                                            <td class="col--used">10+</td>
+                                        </tr>
+                                        <tr class="mod--2-1">
+                                            <td class="col--value">B2C<span class="icon--container
+                                            icon-size-small icon-star4" title="Top Skill"></span></td>
+                                            <td class="col--duration">8+</td>
+                                            <td class="col--used">50+</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </div>
+
+                    </section>
+
+                    <section data-datasection="tools-skills" data-position="3">
+
+                        <blockquote class="cite">
+                            <p class="content">„If the only tool you have is a hammer, you tend to see every problem as a nail.”</p>
+                            <p class="author">(Abraham Maslow)</p>
+                        </blockquote>
+
+                        <h2 class="section" data-datarole="skills-tools-title is--darkblue"><span
+                                    class="icon--container
+                                icon-size-big icon-tools"></span>Tools</h2>
+                        <div class="grid--container">
+
+                            <div class="article grid--position-left" data-datarole="tools-skills-development">
+                                <h3 class="subsection">Development</h3>
+                                <span class="icon--container icon-size-medium icon-keyboard is--lightblue"></span>
+                            </div>
+
+                            <div class="article grid--position-right" data-datarole="tools-skills-qa">
+                                <h3 class="subsection">Code quality</h3>
+                                <span class="icon--container icon-size-medium icon-checkmark-circle
+                                is--lightblue"></span>
+                            </div>
+
+                            <div class="article grid--position-left is--reversed-left"
+                                 data-datarole="tools-skills-work-management">
+                                <h3 class="subsection">Work management</h3>
+                                <span class="icon--container icon-size-medium icon-clock2 is--lightblue"></span>
+                            </div>
+
+                            <div class="article grid--position-right is--reversed-right" data-datarole="tools-skills-env">
+                                <h3 class="subsection">Environments</h3>
+                                <span class="icon--container icon-size-medium icon-flow-branch
+                                is--lightblue"></span>
+                            </div>
+
+                            <div class="article grid--position-left" data-datarole="tools-skills-graphic">
+                                <h3 class="subsection">Graphic Tools</h3>
+                                <span class="icon--container icon-size-medium icon-images is--lightblue"></span>
+                            </div>
+
+                            <div class="article grid--position-right" data-datarole="tools-skills-other">
+                                <h3 class="subsection">Other</h3>
+                                <span class="icon--container icon-size-medium icon-pawn
+                                is--lightblue"></span>
+                            </div>
+
+                        </div>
+
+                    </section>
+
+                    <section data-datasection="language-skills" data-position="4">
+
+                        <blockquote class="cite">
+                            <p class="content">„If you talk to a man in a language he understands, that goes to his head. If you talk to him in his language, that goes to his heart”</p>
+                            <p class="author">(Nelson Mandela)</p>
+                        </blockquote>
+
+                        <h2 class="section" data-datarole="skills-language-title"><span class="icon--container
+                                icon-size-big icon-bubble"></span>Language Skills</h2>
+
+                    </section>
+
+                    <section data-datasection="education" data-position="5">
+
+                        <blockquote class="cite">
+                            <p class="content">„Education is what remains after one has forgotten what one has learned in school.”</p>
+                            <p class="author">(Albert Einstein)</p>
+                        </blockquote>
+
+                        <h2 class="section" data-datarole="education-title"><span class="icon--container
+                                icon-size-big icon-study"></span>Education</h2>
+
+                    </section>
+
+                    <section data-datasection="work-xp" data-position="6" class="is--last">
+
+                        <blockquote class="cite">
+                            <p class="content">„Education is what remains after one has forgotten what one has learned in school.”</p>
+                            <p class="author">(Albert Einstein)</p>
+                        </blockquote>
+
+                        <h2 class="section" data-datarole="work-xp-title"><span class="icon--container
+                                icon-size-big icon-road"></span>Work experience</h2>
+
+                    </section>
+
+                    <section data-datasection="work-xp" data-position="7" class="is--hidden">
+
+                        <blockquote class="cite">
+                            <p class="content">„Education is what remains after one has forgotten what one has learned in school.”</p>
+                            <p class="author">(Albert Einstein)</p>
+                        </blockquote>
+
+                        <h2 class="section" data-datarole="references-title"><span class="icon--container
+                                icon-size-big icon-thumbs-up"></span>References</h2>
+
+                    </section>
+
+                </div>
+                <!-- //#main -->
+
+            </div>
+            <!-- //#wrapper -->
+
+        </body>
+
+    </html>

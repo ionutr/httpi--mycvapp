@@ -16,10 +16,11 @@ class AppKernel extends Kernel
             new Symfony\Bundle\AsseticBundle\AsseticBundle(),
             new Doctrine\Bundle\DoctrineBundle\DoctrineBundle(),
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
+            new Httpi\Bundle\CoreBundle\HttpiCoreBundle(),
             new Httpi\Mycv\Bundle\CoreBundle\HttpiMycvCoreBundle(),
             new Httpi\Mycv\Bundle\AdminBundle\HttpiMycvAdminBundle(),
             new Httpi\Mycv\Bundle\DemoBundle\HttpiMycvDemoBundle(),
-            new Httpi\Bundle\CoreBundle\HttpiCoreBundle(),
+            new Spraed\PDFGeneratorBundle\SpraedPDFGeneratorBundle()
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
