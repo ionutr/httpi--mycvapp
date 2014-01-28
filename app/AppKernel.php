@@ -19,6 +19,7 @@ class AppKernel extends Kernel
             new Httpi\Mycv\Bundle\CoreBundle\HttpiMycvCoreBundle(),
             new Httpi\Mycv\Bundle\AdminBundle\HttpiMycvAdminBundle(),
             new Httpi\Mycv\Bundle\DemoBundle\HttpiMycvDemoBundle(),
+            new Httpi\Bundle\CoreBundle\HttpiCoreBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
