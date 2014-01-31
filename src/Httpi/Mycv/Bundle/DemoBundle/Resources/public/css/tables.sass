@@ -1,0 +1,58 @@
+.data-table
+  width: 100%
+  margin-top: 30px
+  .col--value
+    width: 80%
+  .col--duration
+    width: 10%
+  .col--used
+    width: 10%
+  td
+    padding: 5px
+
+.article
+  .data-table
+    position: absolute
+    bottom: 20px
+    color: $white
+    border: 1px solid $white
+    thead
+      th
+        padding: 5px
+        font-size: $smalltitle-text-size
+        font-weight: bold
+        border: 1px solid $white
+        background-color: $white
+        color: $anthracit
+
+    tbody
+      tr
+        td
+          font-size: $default-text-size
+          border-bottom: 1px solid $white
+        &.mod--2-1
+          background-color: $golden
+          color: $anthracit
+        .icon--container
+          color: $yellow
+          position: static !important
+
+  &.grid--position-right
+    .data-table
+      tbody
+        tr
+          &.mod--2-0
+            background-color: $anthracit
+            color: $white
+
+  &.grid--position-right
+    .data-table
+      color: $black
+
+  &.is--reversed-left
+    .data-table
+      tbody
+        tr
+          &.mod--2-0
+            background-color: $anthracit
+            color: $white

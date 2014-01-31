@@ -1,0 +1,17 @@
+html {
+	background-image: none;
+}
+
+#wrapper {
+    width: 700px !Important;
+	margin-left: 0 !important;
+}
+
+.grid--container {
+    width: 680px !Important;
+}
+
+.article {
+    width: 300px !important;
+    height: 300px !Important;
+}

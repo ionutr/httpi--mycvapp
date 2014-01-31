@@ -1,0 +1,101 @@
+* {
+	background-repeat: no-repeat;
+}
+
+html {
+    background-image: url(/bundles/httpimycvdemo/img/bg/bg--html.png);
+    background-repeat: repeat;
+}
+
+#wrapper {
+	margin: 20px auto 0 auto;
+	width: 958px;
+	height: 940px;
+	font-size: 11px;
+	border: 1px solid #000;
+    background-color: #fff;
+}
+
+#header {
+	height: 290px;
+	background-image: url(/bundles/httpimycvdemo/img/bg/bg--presentation.jpg);
+	background-position: 0 bottom;
+}
+
+#presentation {
+	position: relative;
+	height: 275px;
+	border-bottom: 1px solid #000;
+}
+
+#presentation h1 {
+	width: 200px;
+	position: absolute;
+	right: 40px;
+	top: 30px;
+	font-family: 'fascinateregular';
+	font-size: 60px;
+	line-height: 60px;
+	text-align: right;
+	color: #40444f;
+}
+
+#presentation h2 {
+	position: absolute;
+	right: 40px;
+	top: 150px;
+	font-family: 'fascinateregular';
+	font-size: 40px;
+	text-align: right;
+}
+
+#presentation h2.type {
+	color: #fff;
+}
+
+#presentation h2.position {
+	top: 190px;
+	font-size: 50px;
+	color: #f1dca5;
+}
+
+p.updated {
+	text-align: right;
+	padding-right: 10px;
+	color: #aaa;
+}
+
+#vcard {
+	visibility: hidden;
+	height: 20px;
+	overflow: hidden;
+}
+
+#main {
+	margin-top: 50px;
+}
+
+blockquote.cite {
+	padding-left: 10px;
+	font-family: 'cooper_blackregular';
+	color: #7da647;
+	width: 100%;
+	overflow: hidden;
+	font-size: 14px;
+}
+
+blockquote.cite p.content {
+	float: left;
+}
+
+blockquote.cite p.author {
+	float: left;
+	margin-left: 10px;
+}
+
+.section {
+	padding: 10px 0 0 15px;
+	font-family: 'cooper_blackregular';
+	font-size: 20px;
+	color: #00b8ff;
+}

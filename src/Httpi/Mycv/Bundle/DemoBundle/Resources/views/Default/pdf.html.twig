@@ -1,0 +1,10 @@
+{% extends "HttpiMycvDemoBundle:Default:index.html.twig" %}
+
+{% block css %}
+    {{ parent() }}
+    {% stylesheets
+    '@HttpiMycvDemoBundle/Resources/public/css/pdf.css'
+    %}
+    <link rel="stylesheet" href="{{ asset_url }}" />
+    {% endstylesheets %}
+{% endblock %}

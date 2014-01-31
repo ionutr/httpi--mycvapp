@@ -1,0 +1,286 @@
+/* line 15, C:/Users/ionutr/PhpstormProjects/httpi--mycvapp/src/Httpi/Mycv/Bundle/DemoBundle/Resources/public/css/colors.sass */
+.is--golden {
+  color: #f1dca5; }
+
+/* line 18, C:/Users/ionutr/PhpstormProjects/httpi--mycvapp/src/Httpi/Mycv/Bundle/DemoBundle/Resources/public/css/colors.sass */
+.is--anthracit {
+  color: #40444f; }
+
+/* line 21, C:/Users/ionutr/PhpstormProjects/httpi--mycvapp/src/Httpi/Mycv/Bundle/DemoBundle/Resources/public/css/colors.sass */
+.is--lightblue {
+  color: #00b8ff; }
+
+/* line 24, C:/Users/ionutr/PhpstormProjects/httpi--mycvapp/src/Httpi/Mycv/Bundle/DemoBundle/Resources/public/css/colors.sass */
+.is--darkblue {
+  color: darkblue !important; }
+
+/* line 13, C:/Users/ionutr/PhpstormProjects/httpi--mycvapp/src/Httpi/Mycv/Bundle/DemoBundle/Resources/public/css/typography.sass */
+.icon-size-small {
+  font-size: 11px; }
+
+/* line 16, C:/Users/ionutr/PhpstormProjects/httpi--mycvapp/src/Httpi/Mycv/Bundle/DemoBundle/Resources/public/css/typography.sass */
+.icon-size-normal {
+  font-size: 25px; }
+
+/* line 19, C:/Users/ionutr/PhpstormProjects/httpi--mycvapp/src/Httpi/Mycv/Bundle/DemoBundle/Resources/public/css/typography.sass */
+.icon-size-medium {
+  font-size: 40px; }
+
+/* line 22, C:/Users/ionutr/PhpstormProjects/httpi--mycvapp/src/Httpi/Mycv/Bundle/DemoBundle/Resources/public/css/typography.sass */
+.icon-size-big {
+  font-size: 60px; }
+
+/* line 1, C:/Users/ionutr/PhpstormProjects/httpi--mycvapp/src/Httpi/Mycv/Bundle/DemoBundle/Resources/public/css/tables.sass */
+.data-table {
+  width: 100%;
+  margin-top: 30px; }
+  /* line 4, C:/Users/ionutr/PhpstormProjects/httpi--mycvapp/src/Httpi/Mycv/Bundle/DemoBundle/Resources/public/css/tables.sass */
+  .data-table .col--value {
+    width: 80%; }
+  /* line 6, C:/Users/ionutr/PhpstormProjects/httpi--mycvapp/src/Httpi/Mycv/Bundle/DemoBundle/Resources/public/css/tables.sass */
+  .data-table .col--duration {
+    width: 10%; }
+  /* line 8, C:/Users/ionutr/PhpstormProjects/httpi--mycvapp/src/Httpi/Mycv/Bundle/DemoBundle/Resources/public/css/tables.sass */
+  .data-table .col--used {
+    width: 10%; }
+  /* line 10, C:/Users/ionutr/PhpstormProjects/httpi--mycvapp/src/Httpi/Mycv/Bundle/DemoBundle/Resources/public/css/tables.sass */
+  .data-table td {
+    padding: 5px; }
+
+/* line 14, C:/Users/ionutr/PhpstormProjects/httpi--mycvapp/src/Httpi/Mycv/Bundle/DemoBundle/Resources/public/css/tables.sass */
+.article .data-table {
+  position: absolute;
+  bottom: 20px;
+  color: white;
+  border: 1px solid white; }
+  /* line 20, C:/Users/ionutr/PhpstormProjects/httpi--mycvapp/src/Httpi/Mycv/Bundle/DemoBundle/Resources/public/css/tables.sass */
+  .article .data-table thead th {
+    padding: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    border: 1px solid white;
+    background-color: white;
+    color: #40444f; }
+  /* line 30, C:/Users/ionutr/PhpstormProjects/httpi--mycvapp/src/Httpi/Mycv/Bundle/DemoBundle/Resources/public/css/tables.sass */
+  .article .data-table tbody tr td {
+    font-size: 11px;
+    border-bottom: 1px solid white; }
+  /* line 33, C:/Users/ionutr/PhpstormProjects/httpi--mycvapp/src/Httpi/Mycv/Bundle/DemoBundle/Resources/public/css/tables.sass */
+  .article .data-table tbody tr.mod--2-1 {
+    background-color: #f1dca5;
+    color: #40444f; }
+  /* line 36, C:/Users/ionutr/PhpstormProjects/httpi--mycvapp/src/Httpi/Mycv/Bundle/DemoBundle/Resources/public/css/tables.sass */
+  .article .data-table tbody tr .icon--container {
+    color: yellow;
+    position: static !important; }
+/* line 44, C:/Users/ionutr/PhpstormProjects/httpi--mycvapp/src/Httpi/Mycv/Bundle/DemoBundle/Resources/public/css/tables.sass */
+.article.grid--position-right .data-table tbody tr.mod--2-0 {
+  background-color: #40444f;
+  color: white; }
+/* line 49, C:/Users/ionutr/PhpstormProjects/httpi--mycvapp/src/Httpi/Mycv/Bundle/DemoBundle/Resources/public/css/tables.sass */
+.article.grid--position-right .data-table {
+  color: black; }
+/* line 56, C:/Users/ionutr/PhpstormProjects/httpi--mycvapp/src/Httpi/Mycv/Bundle/DemoBundle/Resources/public/css/tables.sass */
+.article.is--reversed-left .data-table tbody tr.mod--2-0 {
+  background-color: #40444f;
+  color: white; }
+
+/* line 7, layout.sass */
+html {
+  background-image: url(/bundles/httpimycvdemo/img/bg/bg--html.png);
+  background-repeat: repeat; }
+  /* line 12, layout.sass */
+  html body * {
+    background-repeat: no-repeat; }
+  /* line 15, layout.sass */
+  html body #wrapper {
+    margin: 20px auto 0 auto;
+    width: 958px;
+    margin-bottom: 30px;
+    font-size: 11px;
+    border: 1px solid black;
+    background-color: white; }
+    /* line 23, layout.sass */
+    html body #wrapper #header {
+      height: 290px;
+      background-image: url(/bundles/httpimycvdemo/img/bg/bg--presentation.jpg);
+      background-position: 0 bottom; }
+      /* line 28, layout.sass */
+      html body #wrapper #header p.updated {
+        text-align: right;
+        padding-right: 10px;
+        color: #aaaaaa; }
+      /* line 33, layout.sass */
+      html body #wrapper #header #presentation {
+        position: relative;
+        height: 275px;
+        border-bottom: 1px solid black; }
+        /* line 38, layout.sass */
+        html body #wrapper #header #presentation h1 {
+          width: 200px;
+          position: absolute;
+          right: 20px;
+          top: 30px;
+          font-family: "fascinateregular";
+          font-size: 60px;
+          line-height: 60px;
+          text-align: right;
+          color: #40444f; }
+        /* line 47, layout.sass */
+        html body #wrapper #header #presentation h2 {
+          position: absolute;
+          right: 20px;
+          top: 150px;
+          font-family: "fascinateregular";
+          font-size: 40px;
+          text-align: right; }
+          /* line 54, layout.sass */
+          html body #wrapper #header #presentation h2.type {
+            color: white; }
+          /* line 57, layout.sass */
+          html body #wrapper #header #presentation h2.position {
+            top: 190px;
+            font-family: "fascinateregular";
+            font-size: 50px;
+            color: #f1dca5; }
+      /* line 62, layout.sass */
+      html body #wrapper #header #vcard {
+        width: 100%;
+        padding-top: 2px;
+        height: 23px;
+        overflow: hidden;
+        position: relative; }
+        /* line 69, layout.sass */
+        html body #wrapper #header #vcard .icon--container {
+          margin-right: 3px; }
+        /* line 72, layout.sass */
+        html body #wrapper #header #vcard a:hover {
+          color: #f1dca5 !important; }
+        /* line 74, layout.sass */
+        html body #wrapper #header #vcard * {
+          color: black !important;
+          font-size: 14px !important; }
+        /* line 78, layout.sass */
+        html body #wrapper #header #vcard .contact--email {
+          font-family: "cooper_blackregular";
+          font-size: 14px;
+          color: dodgerblue;
+          position: absolute;
+          left: 30px; }
+        /* line 83, layout.sass */
+        html body #wrapper #header #vcard .contact--phone {
+          font-family: "cooper_blackregular";
+          font-size: 14px;
+          color: dodgerblue;
+          position: absolute;
+          left: 210px; }
+        /* line 88, layout.sass */
+        html body #wrapper #header #vcard .contact--www {
+          font-family: "cooper_blackregular";
+          font-size: 14px;
+          color: dodgerblue;
+          position: absolute;
+          left: 390px; }
+        /* line 93, layout.sass */
+        html body #wrapper #header #vcard .contact--xing {
+          font-family: "cooper_blackregular";
+          font-size: 14px;
+          color: dodgerblue;
+          position: absolute;
+          left: 562px; }
+        /* line 98, layout.sass */
+        html body #wrapper #header #vcard address {
+          font-family: "cooper_blackregular";
+          font-size: 14px;
+          color: dodgerblue;
+          position: absolute;
+          right: 20px; }
+    /* line 103, layout.sass */
+    html body #wrapper #main {
+      margin-top: 50px; }
+      /* line 106, layout.sass */
+      html body #wrapper #main section {
+        margin-bottom: 50px;
+        padding-bottom: 50px;
+        border-bottom: 2px solid #40444f; }
+        /* line 110, layout.sass */
+        html body #wrapper #main section.is--last {
+          padding-bottom: 40px;
+          border-bottom-style: none; }
+        /* line 114, layout.sass */
+        html body #wrapper #main section .grid--container {
+          width: 920px;
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: 20px;
+          overflow: hidden; }
+          /* line 120, layout.sass */
+          html body #wrapper #main section .grid--container .article {
+            width: 47%;
+            height: 360px;
+            margin-bottom: 30px;
+            padding: 10px;
+            background-color: #40444f;
+            opacity: 1;
+            position: relative; }
+            /* line 129, layout.sass */
+            html body #wrapper #main section .grid--container .article .icon--container {
+              position: absolute;
+              right: 10px;
+              top: 20px; }
+            /* line 134, layout.sass */
+            html body #wrapper #main section .grid--container .article.grid--position-left {
+              float: left; }
+            /* line 136, layout.sass */
+            html body #wrapper #main section .grid--container .article.grid--position-right {
+              float: right;
+              background-color: #f1dca5; }
+              /* line 139, layout.sass */
+              html body #wrapper #main section .grid--container .article.grid--position-right .subsection {
+                color: #40444f; }
+            /* line 142, layout.sass */
+            html body #wrapper #main section .grid--container .article.is--reversed-left {
+              background-color: #f1dca5; }
+              /* line 144, layout.sass */
+              html body #wrapper #main section .grid--container .article.is--reversed-left .subsection {
+                color: #40444f; }
+            /* line 146, layout.sass */
+            html body #wrapper #main section .grid--container .article.is--reversed-right {
+              background-color: #40444f; }
+              /* line 148, layout.sass */
+              html body #wrapper #main section .grid--container .article.is--reversed-right .subsection {
+                color: #f1dca5; }
+            /* line 151, layout.sass */
+            html body #wrapper #main section .grid--container .article .subsection {
+              margin-top: 20px;
+              font-family: "cooper_blackregular";
+              font-size: 25px;
+              color: #ff9060;
+              color: #f1dca5;
+              font-size: 20px;
+              font-weight: bold; }
+        /* line 158, layout.sass */
+        html body #wrapper #main section blockquote.cite {
+          padding-left: 10px;
+          font-family: "cooper_blackregular";
+          font-size: 14px;
+          color: dodgerblue;
+          color: lightgrey;
+          width: 100%;
+          overflow: hidden; }
+          /* line 165, layout.sass */
+          html body #wrapper #main section blockquote.cite p {
+            float: left; }
+            /* line 167, layout.sass */
+            html body #wrapper #main section blockquote.cite p.author {
+              margin-left: 10px; }
+        /* line 170, layout.sass */
+        html body #wrapper #main section .section {
+          padding: 10px 0 0 15px;
+          font-family: "cooper_blackregular";
+          font-size: 25px;
+          color: #ff9060; }
+
+/* line 174, layout.sass */
+.is--hidden {
+  display: none; }

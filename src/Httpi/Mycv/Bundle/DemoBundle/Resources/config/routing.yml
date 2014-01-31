@@ -1,3 +1,7 @@
 httpi_mycv_demo_html:
     pattern:  /demo/html
     defaults: { _controller: HttpiMycvDemoBundle:Html:index }
+
+httpi_mycv_demo_html2pdf:
+    pattern:  /demo/html2pdf
+    defaults: { _controller: HttpiMycvDemoBundle:Html:pdf }
